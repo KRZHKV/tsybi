@@ -1,0 +1,18 @@
+body {
+	font-size: 10px;
+}
+.header {
+	background: url(../img/derevya_vid_sverkhu_les_119826_2048x1152.jpg) center no-repeat;
+	background-size: cover;
+	color: #ffffff;
+	text-align: center;
+	text-transform: uppercase;
+}
+.header-logo {
+	margin-top: 5rem;
+	margin-bottom: 5rem;
+}
+.header-menu {
+	background-color: #734E39;
+	color:F2E3D5 592F25 ;
+}
