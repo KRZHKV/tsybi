@@ -9,6 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
 		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="./libs/font awesome/css/all.css">
 	<link rel="stylesheet" href="./css/normalize.css">
 	<link rel="stylesheet" href="./css/style.css">
 
@@ -32,23 +33,15 @@
 		<div class="header-menu">
 			<div class="container">
 				<div class="row">
-					<div class="col-xl-2">
-						<a href="#">О нас</a>
-					</div>
-					<div class="col-xl-2">
-						<a href="#">Наши услуги</a>
-					</div>
-					<div class="col-xl-2">
-						<a href="#">Галерея</a>
-					</div>
-					<div class="col-xl-2">
-						<a href="#">Цены</a>
-					</div>
-					<div class="col-xl-2">
-						<a href="#">Вопросы</a>
-					</div>
-					<div class="col-xl-2">
-						<a href="#">Контакты</a>
+					<div class="col-xl-10 offset-xl-1">
+						<ul class="header-menu-wrapper">
+							<li><a href="#aboutUs">о нас</a></li>
+							<li><a href="#services">наши услуги</a></li>
+							<li><a href="#gallery">галерея</a></li>
+							<li><a href="#prices">цены</a></li>
+							<li><a href="#questions">вопросы</a></li>
+							<li><a href="#contacts">контакты</a></li>
+						</ul>
 					</div>
 				</div>
 			</div>
@@ -57,7 +50,7 @@
 
 
 	<!-- About Us -->
-	<section class="about-us">
+	<section class="about-us" id="aboutUs">
 		<div class="container">
 			<h2 class="section-header">
 				О нас
@@ -67,25 +60,12 @@
 					<div class="img">Фото</div>
 				</div>
 				<div class="col-xl-7">
-					<p class="about-us-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo aliquid quam
-						esse dolores maxime autem earum possimus quibusdam quaerat consequatur aliquam praesentium
-						corporis facere omnis, culpa distinctio deleniti, placeat saepe cum, alias et unde officia
-						atque. Asperiores esse qui nulla necessitatibus eligendi possimus? Nam dignissimos nisi quasi ad
-						similique, libero quia facilis nostrum neque repellat unde doloribus a aspernatur dicta, debitis
-						veniam distinctio, dolorum culpa magnam. Consequuntur temporibus deserunt, asperiores libero
-						eveniet labore harum nisi error recusandae sit, nulla velit voluptates autem saepe obcaecati
-						exercitationem culpa adipisci ducimus unde. Dolores libero esse ex quis excepturi eaque id quas!
-						Veniam autem adipisci nesciunt officiis molestias doloribus nihil vero, quasi recusandae, et
-						alias minus inventore hic illo cumque natus sit est fuga odio incidunt architecto optio numquam!
-						Nostrum, sapiente, eligendi repudiandae, eum accusantium voluptatem nobis incidunt labore
-						deserunt amet repellendus alias maiores assumenda veritatis quos laudantium distinctio eos
-						facere. Odio nulla, odit tempora, quae delectus quam possimus aspernatur natus nostrum a iste!
-						Similique hic nulla iusto pariatur distinctio optio totam, possimus asperiores, earum eius
-						voluptates beatae ullam nam, quos neque voluptatem sit deleniti officia. Quis delectus, debitis
-						corporis suscipit magni, eius culpa soluta libero sunt, dolorem beatae fugiat ea minima quas
-						laudantium non reprehenderit aperiam sequi? Veniam sint deleniti quis, aut, eum aliquid ratione
-						alias eveniet nisi ipsa eos dolorem sunt dignissimos. Ut quidem aut eveniet quis iure, accusamus
-						facilis pariatur at in magnam atque amet dolore laboriosam. Nesciunt atque accusamus quisquam!
+					<p class="about-us-text">
+						Приблизительно в 2013 году, ещё во времена моей бытности студентом, я уже вынашивал планы о своём деле. Сидя на занятии по «Философии», или это была лекция «Экономики», я слушая монотонные речи преподавателя, рисовал узоры на полях тетради. В какой то момент посмотрел на все эти завитушки и линии и увидел Лотос. Символ перерождения, символ стремлений от темного к светлому. Тот лотос сильно отличался от того, что вы видите на логотипе моей мастерской. Но смысл расцвета после прохождения через тернии, грязь и ил был заложен уже тогда.
+						<br>
+						В название смысл вложен был уже позже, в 2014 году, когда я понял, что для людей со взглядами, умениями и навыками не хватает единения вокруг чего то или кого то. Всегда нравилось произведение «Удивительный волшебник из страны Оз» Лаймена Фрэнка Баума. Всегда нравился автомобильный код моего домашнего региона. На стыке этих двух симпатий родился идефикс. Прошло время и идея обрела форму.
+						<br>
+						Добро пожаловать в «Страну 03» - место, призванное объединять людей вокруг чего-то красивого и индивидуального для каждого из нас!
 					</p>
 				</div>
 			</div>
@@ -94,7 +74,7 @@
 
 
 	<!-- Services -->
-	<section class="services">
+	<section class="services" id="services">
 		<div class="container">
 			<h2 class="section-header">
 				Наши услуги
@@ -131,12 +111,15 @@
 
 
 	<!-- Gallery -->
-	<section class="gallery">
+	<section class="gallery" id="gallery">
 		<div class="container">
 			<h2 class="section-header">
 				Примеры работ
 			</h2>
 			<div class="row slider">
+				<div class="col-xl-4 slider-item">
+					<img src="./img/slider-photo.jpg" alt="">
+				</div>
 				<div class="col-xl-4 slider-item">
 					<img src="./img/slider-photo.jpg" alt="">
 				</div>
@@ -154,7 +137,7 @@
 
 
 	<!-- Prices -->
-	<section class="prices">
+	<section class="prices" id="prices">
 		<div class="container">
 			<h2 class="section-header">
 				Цены
@@ -201,7 +184,7 @@
 
 
 	<!-- Question block -->
-	<section class="question">
+	<section class="question" id="questions">
 		<div class="container">
 			<h2 class="section-header">
 				Остались вопросы?
@@ -223,7 +206,7 @@
 
 
 	<!-- Footer -->
-	<footer class="footer">
+	<footer class="footer" id="contacts">
 		<div class="container">
 			<div class="row">
 				<div class="col-xl-7">
@@ -231,14 +214,15 @@
 						<div class="col-xl-5">
 							<h3>Мы в соц сетях</h3>
 							<ul class="footer-link-wrapper">
-								<li><a href="#"><img class="footer-link" src="./img/instagram-brands.svg" alt=""></a>
+								<li class="footer-link"><a href="#"><i class="fab fa-instagram"></i></a>
 								</li>
-								<li><a href="#"><img class="footer-link" src="./img/telegram-brands.svg" alt=""></a>
+								<li class="footer-link"><a href="#"><i class="fab fa-telegram"></i></a>
 								</li>
-								<li><a href="#"><img class="footer-link" src="./img/facebook-square-brands.svg"
-											alt=""></a></li>
-								<li><a href="#"><img class="footer-link" src="./img/vk-brands.svg" alt=""></a></li>
-								<li><a href="#"><img class="footer-link" src="./img/whatsapp-brands.svg" alt=""></a>
+								<li class="footer-link"><a href="#"><i class="fab fa-facebook"></i></a>
+								</li>
+								<li class="footer-link"><a href="#"><i class="fab fa-vk"></i></a>
+								</li>
+								<li class="footer-link"><a href="#"><i class="fab fa-whatsapp"></i></a>
 								</li>
 							</ul>
 						</div>
@@ -301,8 +285,10 @@
 		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
 	</script>
 	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="./libs/font awesome/js/all.js"></script>
 	<script src="./js/script.js"></script>
 </body>
+
 
 
 </html>

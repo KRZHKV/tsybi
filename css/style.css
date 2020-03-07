@@ -6,6 +6,16 @@ html {
 body {
 	font-family: 'Roboto', sans-serif;
 	text-decoration: none;
+
+}
+button:focus {
+	outline: none;
+}
+input:focus {
+	outline: none;
+}
+textarea:focus {
+	outline: none;
 }
 section {
 	padding-bottom: 8rem;
@@ -59,12 +69,41 @@ section {
 	background-color: #734E39;
 	text-align: center;
 }
-.header-menu a {
-	line-height: 6.2rem;
-	color: #ffffff;
+.header-menu-wrapper {
+	display: flex;
+	list-style: none;
+	align-items: center;
+	justify-content: space-between;
+	padding-inline-start: 0;
+}
+.header-menu-wrapper a{
+	line-height: 6rem;
 	font-size: 1.6rem;
+	color: #ffffff;
 	font-weight: 700;
 	text-decoration: none;
+	transition: .2s;
+	position: relative;
+	
+}
+.header-menu-wrapper a:before {
+	content: '';
+	bottom: -2px;
+	left: 0;
+	position: absolute;
+	width: 0%;
+	height: 2px;
+	background-color: #F2E3D5;
+	transition: .2s;
+}
+/* hover effect */
+.header-menu-wrapper a:hover{
+	color: #F2E3D5;
+	
+}
+.header-menu-wrapper a:hover:before{
+	width: 100%;
+	
 }
 
 
@@ -102,12 +141,67 @@ section {
 
 
 /* Gallery */
+.slider {
+	margin: 0 auto;
+	position: relative;
+}
 .slider-item {
 	text-align: center;
 }
-
-
+.slick-dots {
+	width: 10rem;
+	position: absolute;
+	bottom: -80px;
+	left: 50%;
+	margin-left: -5rem;
+	display: flex;
+	background-color: #fff;
+	padding-inline-start: 0;
+	list-style: none;
+	justify-content: space-between;
+}
+.slick-dots li button {
+	border-radius: 50%;
+	content: '';
+	height: 14px;
+	width: 10px;
+	background-color: #734E39;
+	border: none;
+}
+.slick-dots .slick-active button {
+	background-color: #A6836F;
+	
+}
+.slider-prev {
+	position: absolute;
+	z-index: 2;
+	top: 50%;
+	left: 0;
+	line-height: 2rem;
+	width: 3.5rem;
+	height: 3.5rem;
+	font-size: 2rem;
+	border-radius: 50%;
+	background-color: #734E39;
+	color: #ffffff;
+	border: none;
+}
+.slider-next {
+	position: absolute;
+	z-index: 2;
+	top: 50%;
+	line-height: 2rem;
+	right: 0;
+	width: 3.5rem;
+	height: 3.5rem;
+	font-size: 2rem;
+	border-radius: 50%;
+	background-color: #734E39;
+	color: #ffffff;
+	border: none;
+}
 .divider {
+	margin-top: 80px;
 	background-color: #592F25;
 	width: 100%;
 	height: 7rem;
@@ -228,11 +322,12 @@ section {
 	padding-inline-start: 0;
 }
 .footer-link {
-	margin: 1rem 0.6rem;
-	width: 2rem;
+	margin: 0rem 0.5rem;
+	
 }
-.footer-link a img{
+.footer-link a {
 	color: white;
+	font-size: 3rem;
 }
 .footer-contact-wrapper {
 	text-align: left;
