@@ -117,8 +117,8 @@ section {
 .img {
 	margin: 0 auto;
 	margin-top: 0.7rem;
-	width: 40rem;
-	height: 50rem;
+	max-width: 40rem;
+	height: 40rem;
 	background-color: gray;
 }
 
@@ -139,7 +139,7 @@ section {
 	display: block;
 	margin: 0 auto;
 	margin-top: 0.7rem;
-	max-width: 45rem;
+	max-width: 80%;
 }
 
 
