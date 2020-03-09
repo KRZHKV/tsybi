@@ -28,10 +28,10 @@ $(document).ready(function() {
 		  ]
 	  });
 	  
-	  let dots = document.querySelectorAll('button[role="tab"]');
-	  dots.forEach((elem) => {
-		elem.innerHTML = '';
-	  });
+});
+
+window.addEventListener('DOMContentLoaded', function() {
+	
 	  const menuBtn = document.querySelector('.menu-btn');
 	  const adaptiveMenu = document.querySelector('.header-menu-adaptive');
 	  const links = adaptiveMenu.querySelectorAll('a');
@@ -45,7 +45,7 @@ $(document).ready(function() {
 		  adaptiveMenu.classList.toggle('header-menu-adaptive-active');
 	  });
 
-});
+})
 
 
 

@@ -58,7 +58,7 @@ transition: 0.3s;
 	align-items: center;
 }
 .header-menu-adaptive li {
-	margin: 2rem;
+	margin-bottom: 2.5rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -67,6 +67,7 @@ transition: 0.3s;
 
 }
 .header-menu-adaptive a {
+	text-align: center;
 	color: #000000;
 	font-weight: bold;
 	font-size: 2rem;
@@ -250,9 +251,10 @@ transition: 0.3s;
 	border-radius: 50%;
 	content: '';
 	height: 14px;
-	width: 10px;
+	width: 14px;
 	background-color: #734E39;
 	border: none;
+	font-size: 0;
 }
 .slick-dots .slick-active button {
 	background-color: #A6836F;
@@ -530,15 +532,27 @@ margin-right: 2px;
 	.prices-item {
 		margin-top: 2.5rem;
 	}
+	.slider-item-wrapper {
+		width: 65%;
+	}
 
 	
 }
 
 @media screen and (max-width: 991px) {
 	.header {
-		padding-top: 100px;
-		padding-bottom: 70px;
+		padding-top: 80px;
+		padding-bottom: 50px;
 		background-size: 700;
+	}
+	.header-logo {
+		max-width: 20rem;
+	}
+	.header h1 {
+		font-size: 2.6em;
+	}
+	.header h2 {
+		font-size: 2rem;
 	}
 	.header-menu {
 		height: 5rem;
@@ -558,12 +572,14 @@ margin-right: 2px;
 	}
 	.about-us-img {
 		margin-bottom: 3rem;
+		max-width: 25rem;
 	}
 	.services-img {
+		max-width: 25rem;
 		margin-top: 3rem;
 	}
 	.slider-item-wrapper {
-		width: 50%;
+		width: 65%;
 	}
 	.slider-item img {
 		max-width: 100%;
