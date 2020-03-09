@@ -34,12 +34,17 @@ $(document).ready(function() {
 	  });
 	  const menuBtn = document.querySelector('.menu-btn');
 	  const adaptiveMenu = document.querySelector('.header-menu-adaptive');
+	  const links = adaptiveMenu.querySelectorAll('a');
 	  
-
+	  links.forEach(function(elem) {
+		elem.addEventListener('click', function() {
+			adaptiveMenu.classList.toggle('header-menu-adaptive-active');
+	  });
+	  });
 	  menuBtn.addEventListener('click', function() {
-		  console.log('click');
 		  adaptiveMenu.classList.toggle('header-menu-adaptive-active');
 	  });
+
 });
 
 
