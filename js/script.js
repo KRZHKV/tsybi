@@ -30,7 +30,7 @@ $(document).ready(function() {
 	  
 	  let dots = document.querySelectorAll('button[role="tab"]');
 	  dots.forEach((elem) => {
-		elem.textContent = '';
+		elem.innerHTML = '';
 	  });
 	  const menuBtn = document.querySelector('.menu-btn');
 	  const adaptiveMenu = document.querySelector('.header-menu-adaptive');

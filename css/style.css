@@ -177,12 +177,11 @@ transition: 0.3s;
 	line-height: 2.5rem;
 	text-align: justify;
 }
-.img {
+.about-us-img {
+	display: block;
 	margin: 0 auto;
 	margin-top: 0.7rem;
-	max-width: 40rem;
-	height: 40rem;
-	background-color: gray;
+	max-width: 35rem;
 }
 
 
@@ -216,7 +215,8 @@ transition: 0.3s;
 	position: relative;
 }
 .slider-item {
-	text-align: center;
+	width: 30rem;
+	max-height: 30rem;
 	
 }
 .slider-item-wrapper {
@@ -226,9 +226,7 @@ transition: 0.3s;
 	padding: 15px;
 }
 .slider-item img {
-	min-height: ;
-	height: 30rem;
-	width: 30rem;
+	width: 100%;
 	display: block;
 	margin: 0 auto;
 	border-radius: 10px;
@@ -540,7 +538,7 @@ margin-right: 2px;
 	.header {
 		padding-top: 100px;
 		padding-bottom: 70px;
-		background-size: auto 100%;
+		background-size: 700;
 	}
 	.header-menu {
 		height: 5rem;
@@ -558,17 +556,20 @@ margin-right: 2px;
 	.header-menu li {
 		display: none;
 	}
-	.img {
-		margin-bottom: 2rem;
+	.about-us-img {
+		margin-bottom: 3rem;
+	}
+	.services-img {
+		margin-top: 3rem;
 	}
 	.slider-item-wrapper {
 		width: 50%;
 	}
 	.slider-item img {
-		max-width: 30rem;
+		max-width: 100%;
 	}
 	.question {
-		background-size: auto 100%;
+		background-size: 700;
 	}
 	.question-form-input {
 		width: 100%;
