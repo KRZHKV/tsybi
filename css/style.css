@@ -371,6 +371,7 @@ margin-right: 2px;
 	padding: 1.3rem 1.3rem;
 	border-radius: 5px;
 	margin-bottom: 5rem;
+	resize: none;
 }
 .question-form-btn {
 	left: 50%;
@@ -544,6 +545,14 @@ margin-right: 2px;
 	}
 	.question {
 		background-size: auto 100%;
+	}
+	.question-form-input {
+		width: 100%;
+		margin: 0;
+		margin-bottom: 1rem;
+	}
+	.question-form-input:first-child {
+		margin-bottom: 1rem;
 	}
 	.footer-link-wrapper {
 		margin-bottom: 2rem;
