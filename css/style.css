@@ -20,6 +20,7 @@ textarea:focus {
 section {
 	padding-bottom: 8rem;
 }
+
 .section-header {
 	font-size: 2rem;
 	text-align: center;
@@ -48,6 +49,7 @@ transition: 0.3s;
 .header-menu-adaptive-active {
 	display: block;
 	transition: 0.3s;
+	overflow: hidden;
 }
 .header-menu-adaptive ul {
 	width: 100vw;
@@ -262,39 +264,37 @@ transition: 0.3s;
 	
 }
 .slider-prev {
+	text-align: center;
 	position: absolute;
 	z-index: 2;
 	top: 50%;
 	left: 0;
-	line-height: 2rem;
-	width: 3.5rem;
-	height: 3.5rem;
-	font-size: 2rem;
+	line-height: 3.2rem;
+	width: 3.2rem;
+	height: 3.2rem;
+	font-size: 1.9rem;
 	border-radius: 50%;
 	background-color: #734E39;
 	color: #ffffff;
 	border: none;
 }
-.slider-prev .fa-chevron-left {
-margin-right: 2px;
-}
+
 .slider-next {
+	text-align: center;
 	position: absolute;
 	z-index: 2;
 	top: 50%;
-	line-height: 2rem;
+	line-height: 3.2rem;
 	right: 0;
-	width: 3.5rem;
-	height: 3.5rem;
-	font-size: 2rem;
+	width: 3.2rem;
+	height: 3.2rem;
+	font-size: 1.9rem;
 	border-radius: 50%;
 	background-color: #734E39;
 	color: #ffffff;
 	border: none;
 }
-.slider-next .fa-chevron-right {
-	margin-left: 2px;
-	}
+
 .divider {
 	margin-top: 80px;
 	background-color: #592F25;
@@ -534,7 +534,7 @@ margin-right: 2px;
 		margin-top: 2.5rem;
 	}
 	.slider-item-wrapper {
-		width: 65%;
+		width: 100%;
 	}
 
 	
@@ -580,7 +580,7 @@ margin-right: 2px;
 		margin-top: 3rem;
 	}
 	.slider-item-wrapper {
-		width: 65%;
+		width: 80%;
 	}
 	.slider-item img {
 		max-width: 100%;
@@ -613,3 +613,8 @@ margin-right: 2px;
 
 
 }
+
+@media screen and (max-width: 768px) {
+	.slider-item-wrapper {
+		width: 65%;
+	}
