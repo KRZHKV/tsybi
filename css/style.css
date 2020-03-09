@@ -524,6 +524,7 @@ margin-right: 2px;
 	.header {
 		padding-top: 100px;
 		padding-bottom: 70px;
+		background-size: auto;
 	}
 	.header-menu {
 		height: 5rem;
@@ -540,6 +541,13 @@ margin-right: 2px;
 	}
 	.header-menu li {
 		display: none;
+	}
+	.question {
+		background: url(../img/questionBG.jpg);
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: auto;
 	}
 	.footer-link-wrapper {
 		margin-bottom: 2rem;
