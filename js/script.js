@@ -4,12 +4,11 @@ $(document).ready(function() {
         slidesToShow: 3,
         slidesToScroll: 1,
 		dots: true,
+		arrows: false,
 		autoplay: true,
 		autoplaySpeed: 2000,
 		dotClass: "slider-dot",
     	centerPadding: '50px',
-    	prevArrow: "<button class='slider-prev' alt='1'><i class='fas fa-chevron-left'></i></button>",
-		nextArrow: "<button class='slider-next' alt='1'><i class='fas fa-chevron-right'></i></button>",
 		responsive: [
 			 {
 			 	breakpoint: 992,
@@ -27,6 +26,13 @@ $(document).ready(function() {
 			
 		  ]
 	  });
+	
+	$('.slider-arrow-prev').on('click', function() {
+		$('.slider').slick('slickPrev');
+	  });
+	$('.slider-arrow-next').on('click', function() {
+		$('.slider').slick('slickNext');
+	  });
 	  
 });
 
@@ -39,20 +45,13 @@ window.addEventListener('DOMContentLoaded', function() {
 	  links.forEach(function(elem) {
 		elem.addEventListener('click', function() {
 			adaptiveMenu.classList.toggle('header-menu-adaptive-active');
-			if ( body.style.overflow = 'hidden') {
-				body.style.overflow = 'scroll';
-			}
+			body.classList.toggle('overflow-hidden');
 			
 	  });
 	  });
 	  menuBtn.addEventListener('click', function() {
 		adaptiveMenu.classList.toggle('header-menu-adaptive-active');
-			if ( body.style.overflow = 'scroll') {
-				body.style.overflow = 'hidden';
-			} else if ( body.style.overflow = 'hidden') {
-				body.style.overflow = 'scroll';
-			}
-		  
+		body.classList.toggle('overflow-hidden');
 		
 
 	  });
