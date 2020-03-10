@@ -273,6 +273,7 @@ transition: 0.3s;
 	
 }
 .slider-arrow-prev {
+	margin-left: 15px;
 	text-align: center;
 	position: absolute;
 	z-index: 2;
@@ -289,6 +290,7 @@ transition: 0.3s;
 }
 
 .slider-arrow-next {
+	margin-right: 15px;
 	text-align: center;
 	position: absolute;
 	z-index: 10;
@@ -318,6 +320,7 @@ transition: 0.3s;
 	background-color: #F2E3D5;
 }
 .prices-item {
+	max-height: 80rem;
 	text-align: center;
 	background-color: #fff;
 	padding: 2.5rem 2.5rem 2.5rem 2.5rem;
@@ -329,12 +332,19 @@ transition: 0.3s;
 }
 .prices-item span {
 	display: block;
-	margin-top: 50px;
+	margin-top: 2rem;
 	color: #ffffff;
 	padding: 0.8rem 5rem;
 	background-color: #592F25;
 	border-radius: 0.5rem;
 	border: none;
+}
+.prices-item h4 {
+	margin-top: 1rem;
+}
+.prices-item img {
+	max-width: 20rem;
+	border-radius: 5px;
 }
 .prices-btn {
 	text-align: center;

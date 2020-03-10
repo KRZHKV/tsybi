@@ -13,13 +13,15 @@ $(document).ready(function() {
 			 {
 			 	breakpoint: 992,
 			 	settings: {
-			 	  slidesToShow: 2
+				   slidesToShow: 2,
+				   arrows: false
 			 	}
 			},
 			{
 			  breakpoint: 768,
 			  settings: {
 				dots: false,
+				arrows: false,
 				slidesToShow: 1
 			  }
 			},
