@@ -30,9 +30,11 @@ $(document).ready(function() {
 	  });
 	
 	$('.slider-arrow-prev').on('click', function() {
+		event.preventDefault();
 		$('.slider').slick('slickPrev');
 	  });
 	$('.slider-arrow-next').on('click', function() {
+		event.preventDefault();
 		$('.slider').slick('slickNext');
 	  });
 	  
