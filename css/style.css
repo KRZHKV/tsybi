@@ -358,6 +358,7 @@ transition: 0.3s;
 .prices-item img {
 	width: 20rem;
 	height: 20rem;
+	border: 1px solid #734E39;
 	border-radius: 5px;
 }
 .prices-btn {
@@ -381,7 +382,56 @@ transition: 0.3s;
 	margin-top: 3rem;
 	text-align: right;
 }
+.prices-popup-wrapper-active {
+	left: 0;
+}
 
+.prices-popup-wrapper {
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0,0,0, 0.3);
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	display: none;
+	align-items: center;
+	justify-content: center;
+}
+.active {
+	display: flex;
+}
+.prices-popup {
+	margin: 0 auto;
+	padding: 4rem 3rem;
+	max-width: 60rem;
+	background-color: #592F25;
+	color: #ffffff;
+	text-align: center;
+	border-radius: 5px;
+	position: relative;
+}
+.prices-popup h3 {
+	text-align: center;
+	font-size: 2.0em;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-bottom: 2rem;
+}
+.prices-popup p {
+	font-size: 1.4em;
+	margin-top: 1rem;
+}
+.prices-popup-close {
+	font-size: 2rem;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	color: #ffffff;
+	border: none;
+	background-color: transparent;
+}
 
 /* question block */
 .question {

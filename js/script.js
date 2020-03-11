@@ -41,26 +41,39 @@ $(document).ready(function() {
 });
 
 window.addEventListener('DOMContentLoaded', function() {
-	  const body = document.querySelector('body');
-	  const menuBtn = document.querySelector('.menu-btn');
-	  const adaptiveMenu = document.querySelector('.header-menu-adaptive');
-	  const links = adaptiveMenu.querySelectorAll('a');
+	  const body = document.querySelector('body'),
+	  		menuBtn = document.querySelector('.menu-btn'),
+	  		adaptiveMenu = document.querySelector('.header-menu-adaptive'),
+	  		links = adaptiveMenu.querySelectorAll('a');
+
+	  const popup = document.querySelector('.prices-popup-wrapper'),
+			popupBtn = document.querySelector('.prices-popup-close'),
+			pricesBtn = document.querySelectorAll('.span-btn');
 	  
 	  links.forEach(function(elem) {
 		elem.addEventListener('click', function() {
 			adaptiveMenu.classList.toggle('header-menu-adaptive-active');
-			body.classList.toggle('overflow-hidden');
-			
+			body.classList.toggle('overflow-hidden');		
+	  	});
 	  });
-	  });
+
 	  menuBtn.addEventListener('click', function() {
 		adaptiveMenu.classList.toggle('header-menu-adaptive-active');
 		body.classList.toggle('overflow-hidden');
-		
-
 	  });
 
-})
+	  pricesBtn.forEach((elem) => {
+		elem.addEventListener('click', () => {
+			popup.classList.add('active');
+		  });
+	  })
+
+	  popup.addEventListener('click', () => {
+		  popup.classList.toggle('active');
+	  })
+
+
+});
 
 
 
