@@ -327,8 +327,9 @@ transition: 0.3s;
 	background-color: #F2E3D5;
 }
 .prices-item {
+	width: 100%;
 	margin-top: 20px;
-	max-height: 80rem;
+	max-height: 70rem;
 	text-align: center;
 	background-color: #fff;
 	padding: 3rem 2rem;
@@ -338,8 +339,8 @@ transition: 0.3s;
 .prices-text {
 	font-size: 1.4rem;
 	text-align: center;
-	margin-top: 30px;
-	min-height: 15rem;
+	margin-top: 20px;
+	min-height: 14rem;
 }
 .prices-item span {
 	display: block;
