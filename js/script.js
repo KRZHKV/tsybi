@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-	var amountScrolled = 300;
+	let amountScrolled = 300;
 
 	$(window).scroll(function() {
 		if ( $(window).scrollTop() > amountScrolled ) {
