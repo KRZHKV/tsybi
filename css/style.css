@@ -50,6 +50,7 @@ section {
 	background-color: #734E39;
 	color: #ffffff;
 	border-radius: 50%;
+	z-index: 5;
 }
 .back-to-top:hover {
 	color: #ffffff;
@@ -421,11 +422,13 @@ transition: 0.3s;
 	display: none;
 	align-items: center;
 	justify-content: center;
+	z-index: 50;
 }
 .active {
 	display: flex;
 }
 .prices-popup {
+
 	margin: 0 auto;
 	padding: 4rem 3rem;
 	max-width: 60rem;
@@ -479,6 +482,7 @@ transition: 0.3s;
 	width: 100%;
 	text-align: center;
 	font-size: 14px;
+	z-index: 2;
 }
 .question-form-input:first-child {
 	margin: 0;
