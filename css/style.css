@@ -4,6 +4,7 @@ html {
 	box-sizing: border-box;
 }
 body {
+	font-display: swap;
 	font-family: 'Ubuntu', sans-serif;
 	text-decoration: none;
 
