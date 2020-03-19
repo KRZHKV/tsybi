@@ -38,6 +38,25 @@ section {
 	text-align: center;
 	margin-bottom: 3.5rem;
 }
+.back-to-top {
+	display: none;
+	text-align: center;
+	position: fixed;
+	right: 3rem;
+	bottom: 3rem;
+	width: 4.5rem;
+	height: 4.5rem;
+	font-size: 3rem;
+	background-color: #734E39;
+	color: #ffffff;
+	border-radius: 50%;
+	z-index: 5;
+}
+.back-to-top:hover {
+	color: #ffffff;
+}
+
+
 /* adaptive menu */
 .header-menu-adaptive {
 position: fixed;
@@ -203,7 +222,7 @@ transition: 0.3s;
 
 	font-size: 1.6rem;
 	line-height: 2.8rem;
-	text-align: left;
+	text-align: center;
 }
 .services-text span {
 	font-size: 1.8rem;
@@ -350,6 +369,11 @@ transition: 0.3s;
 	background-color: #592F25;
 	border-radius: 0.5rem;
 	border: none;
+	cursor: pointer;
+	transition: .2s;
+}
+.prices-item span:hover {
+	transform: scale(1.04);
 }
 .prices-item h4 {
 	margin-top: 2.5rem;
@@ -398,11 +422,13 @@ transition: 0.3s;
 	display: none;
 	align-items: center;
 	justify-content: center;
+	z-index: 50;
 }
 .active {
 	display: flex;
 }
 .prices-popup {
+
 	margin: 0 auto;
 	padding: 4rem 3rem;
 	max-width: 60rem;
@@ -456,6 +482,7 @@ transition: 0.3s;
 	width: 100%;
 	text-align: center;
 	font-size: 14px;
+	z-index: 2;
 }
 .question-form-input:first-child {
 	margin: 0;
@@ -493,8 +520,11 @@ transition: 0.3s;
 	font-weight: bold;
 	text-transform: uppercase;
 	text-align: center;
+	transition: 0.2s;
 }
-
+.question-form-btn:hover {
+	transform: scale(1.05);
+}
 
 /* footer */
 .footer {
@@ -540,6 +570,7 @@ transition: 0.3s;
 	list-style: none;
 	text-align: left;
 	margin-top: 5px;
+	cursor: pointer;
 }
 .footer-contact-link a {
 	color: white;
@@ -664,7 +695,7 @@ transition: 0.3s;
 	}
 	.about-us-img {
 		margin-bottom: 3rem;
-		max-width: 25rem;
+		max-width: 30rem;
 	}
 	.services-img {
 		max-width: 25rem;

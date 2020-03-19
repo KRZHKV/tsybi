@@ -1,4 +1,23 @@
 $(document).ready(function() {
+
+	let amountScrolled = 300;
+
+	$(window).scroll(function() {
+		if ( $(window).scrollTop() > amountScrolled ) {
+			$('a.back-to-top').fadeIn('slow');
+		} else {
+			$('a.back-to-top').fadeOut('slow');
+		}
+	});
+
+	$('a.back-to-top').click(function() {
+	  $('html, body').animate({
+		  scrollTop: 0
+	  }, 700);
+	  return false;
+  });
+
+
     $('.slider').slick({
         infinite: true,
         slidesToShow: 3,
@@ -37,7 +56,7 @@ $(document).ready(function() {
 		event.preventDefault();
 		$('.slider').slick('slickNext');
 	  });
-	  
+
 });
 
 window.addEventListener('DOMContentLoaded', function() {
@@ -74,7 +93,3 @@ window.addEventListener('DOMContentLoaded', function() {
 
 
 });
-
-
-
-
