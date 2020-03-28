@@ -249,11 +249,11 @@
 			<h3 class="section-subheader">Задайте их в форме ниже и мы свяжемся с Вами!</h3>
 			<div class="row">
 				<div class="col-xl-8 offset-xl-2 col-lg-8 offset-lg-2">
-					<form class="question-form" action="#">
-						<input class="question-form-input" type="text" placeholder="Ваше имя">
-						<input class="question-form-input" type="text" placeholder="Ваш телефон">
-						<input class="question-form-input" type="text" placeholder="Ваш email">
-						<textarea class="question-form-textarea" name="" id="" placeholder="Ваше сообщение"></textarea>
+					<form class="question-form" action="mail.php" method="POST">
+						<input class="question-form-input" type="text" placeholder="Ваше имя" name="name">
+						<input class="question-form-input" type="tel" placeholder="Ваш телефон" name="phone">
+						<input class="question-form-input" type="email" placeholder="Ваш email" name="email">
+						<textarea class="question-form-textarea" id="" placeholder="Ваше сообщение" name="message"></textarea>
 						<button class="question-form-btn" type="submit">отправить</button>
 					</form>
 				</div>
